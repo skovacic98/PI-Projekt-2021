@@ -35,9 +35,9 @@
             this.btnPrijava = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnStatistika = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnUpravljanjeUlogama = new System.Windows.Forms.Button();
+            this.btnBilješke = new System.Windows.Forms.Button();
+            this.btnEvidencija = new System.Windows.Forms.Button();
             this.btnAktivnost = new System.Windows.Forms.Button();
             this.btnObavijesti = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -104,9 +104,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.panel1.Controls.Add(this.btnStatistika);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnUpravljanjeUlogama);
+            this.panel1.Controls.Add(this.btnBilješke);
+            this.panel1.Controls.Add(this.btnEvidencija);
             this.panel1.Controls.Add(this.btnAktivnost);
             this.panel1.Controls.Add(this.btnObavijesti);
             this.panel1.Controls.Add(this.label2);
@@ -130,44 +130,47 @@
             this.btnStatistika.UseVisualStyleBackColor = false;
             this.btnStatistika.Click += new System.EventHandler(this.btnStatistika_Click_1);
             // 
-            // button4
+            // btnUpravljanjeUlogama
             // 
-            this.button4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(5, 325);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(224, 42);
-            this.button4.TabIndex = 15;
-            this.button4.Text = "UPRAVLJANJE ULOGAMA";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnUpravljanjeUlogama.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnUpravljanjeUlogama.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnUpravljanjeUlogama.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpravljanjeUlogama.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnUpravljanjeUlogama.Location = new System.Drawing.Point(5, 325);
+            this.btnUpravljanjeUlogama.Name = "btnUpravljanjeUlogama";
+            this.btnUpravljanjeUlogama.Size = new System.Drawing.Size(224, 42);
+            this.btnUpravljanjeUlogama.TabIndex = 15;
+            this.btnUpravljanjeUlogama.Text = "UPRAVLJANJE ULOGAMA";
+            this.btnUpravljanjeUlogama.UseVisualStyleBackColor = false;
+            this.btnUpravljanjeUlogama.Click += new System.EventHandler(this.btnUpravljanjeUlogama_Click);
             // 
-            // button3
+            // btnBilješke
             // 
-            this.button3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(5, 270);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(222, 42);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "BILJEŠKE";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnBilješke.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBilješke.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBilješke.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBilješke.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnBilješke.Location = new System.Drawing.Point(5, 270);
+            this.btnBilješke.Name = "btnBilješke";
+            this.btnBilješke.Size = new System.Drawing.Size(222, 42);
+            this.btnBilješke.TabIndex = 14;
+            this.btnBilješke.Text = "BILJEŠKE";
+            this.btnBilješke.UseVisualStyleBackColor = false;
+            this.btnBilješke.Click += new System.EventHandler(this.btnBilješke_Click);
             // 
-            // button2
+            // btnEvidencija
             // 
-            this.button2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(5, 215);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(222, 42);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "EVIDENCIJA";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnEvidencija.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnEvidencija.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEvidencija.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEvidencija.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnEvidencija.Location = new System.Drawing.Point(5, 215);
+            this.btnEvidencija.Name = "btnEvidencija";
+            this.btnEvidencija.Size = new System.Drawing.Size(222, 42);
+            this.btnEvidencija.TabIndex = 13;
+            this.btnEvidencija.Text = "EVIDENCIJA";
+            this.btnEvidencija.UseVisualStyleBackColor = false;
+            this.btnEvidencija.Click += new System.EventHandler(this.btnEvidencija_Click);
             // 
             // btnAktivnost
             // 
@@ -328,9 +331,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnStatistika;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnUpravljanjeUlogama;
+        private System.Windows.Forms.Button btnBilješke;
+        private System.Windows.Forms.Button btnEvidencija;
         private System.Windows.Forms.Button btnAktivnost;
         private System.Windows.Forms.Button btnObavijesti;
         private System.Windows.Forms.Label lblVrijeme;

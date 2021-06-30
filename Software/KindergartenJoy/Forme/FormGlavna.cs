@@ -36,7 +36,24 @@ namespace KindergartenJoy.Forme
             pbProfil.MouseLeave += PbProfil_MouseLeave;
             lblIme.MouseHover += LblIme_MouseHover;
             lblIme.MouseLeave += LblIme_MouseLeave;
-            
+            if(OdabraniKorisnik.tip_korisnik_id == 8)
+            {
+                btnUpravljanjeUlogama.Enabled = true;
+            }
+            else
+            {
+                btnUpravljanjeUlogama.Enabled = false;
+            }
+            if(OdabraniKorisnik.tip_korisnik_id == 8 || OdabraniKorisnik.tip_korisnik_id == 1 ||OdabraniKorisnik.tip_korisnik_id == 2)
+            {
+                btnBilješke.Enabled = true;
+                btnEvidencija.Enabled = true;
+            }
+            else
+            {
+                btnBilješke.Enabled = false;
+                btnEvidencija.Enabled = false;
+            }
         }
 
         private void LblIme_MouseLeave(object sender, EventArgs e)
@@ -73,7 +90,7 @@ namespace KindergartenJoy.Forme
 
         private void btnStatistika_Click_1(object sender, EventArgs e)
         {
-            if(OdabraniKorisnik.tip_korisnik_id == 2)
+            if(OdabraniKorisnik.tip_korisnik_id == 2 || OdabraniKorisnik.tip_korisnik_id == 8)
             {
                 FormStatistika form = new FormStatistika();
                 form.ShowDialog();
@@ -112,7 +129,7 @@ namespace KindergartenJoy.Forme
 
         private void btnObavijesti_Click(object sender, EventArgs e)
         {
-            if (OdabraniKorisnik.tip_korisnik_id == 2)
+            if (OdabraniKorisnik.tip_korisnik_id == 2 || OdabraniKorisnik.tip_korisnik_id == 8)
             {
                 FormObavijesti forma = new FormObavijesti(OdabraniKorisnik);
                 forma.ShowDialog();
@@ -141,6 +158,24 @@ namespace KindergartenJoy.Forme
             }
 
             return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        private void btnBilješke_Click(object sender, EventArgs e)
+        {
+            FormBilješke form = new FormBilješke(OdabraniKorisnik);
+            form.ShowDialog();
+        }
+
+        private void btnUpravljanjeUlogama_Click(object sender, EventArgs e)
+        {
+            FormUpravljanjeUlogama form = new FormUpravljanjeUlogama();
+            form.ShowDialog();
+        }
+
+        private void btnEvidencija_Click(object sender, EventArgs e)
+        {
+            FormEvidencija form = new FormEvidencija();
+            form.ShowDialog();
         }
     }
 }

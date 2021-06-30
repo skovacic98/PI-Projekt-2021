@@ -18,7 +18,7 @@ namespace KindergartenJoy
         public grupa()
         {
             this.evidencija = new HashSet<evidencija>();
-            this.radi_u = new HashSet<radi_u>();
+            this.korisnik = new HashSet<korisnik>();
         }
     
         public int grupa_id { get; set; }
@@ -28,6 +28,6 @@ namespace KindergartenJoy
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<evidencija> evidencija { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<radi_u> radi_u { get; set; }
+        public virtual ICollection<korisnik> korisnik { get; set; }
     }
 }

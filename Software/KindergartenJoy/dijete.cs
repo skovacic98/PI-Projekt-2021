@@ -18,8 +18,8 @@ namespace KindergartenJoy
         public dijete()
         {
             this.biljeska = new HashSet<biljeska>();
-            this.se_nalazi = new HashSet<se_nalazi>();
             this.upis = new HashSet<upis>();
+            this.evidencija = new HashSet<evidencija>();
         }
     
         public int dijete_id { get; set; }
@@ -32,8 +32,8 @@ namespace KindergartenJoy
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<biljeska> biljeska { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<se_nalazi> se_nalazi { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<upis> upis { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<evidencija> evidencija { get; set; }
     }
 }

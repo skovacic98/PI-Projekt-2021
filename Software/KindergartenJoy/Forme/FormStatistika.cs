@@ -32,7 +32,7 @@ namespace KindergartenJoy.Forme
                 brojDjece = dgvGlavni.RowCount;
                 dgvGlavni.Columns["biljeska"].Visible = false;
                 dgvGlavni.Columns["upis"].Visible = false;
-                dgvGlavni.Columns["se_nalazi"].Visible = false;
+                dgvGlavni.Columns["evidencija"].Visible = false;
             }
             label3.Text = brojDjece.ToString();
         }
@@ -48,13 +48,13 @@ namespace KindergartenJoy.Forme
                 dgvGlavni.DataSource = query.ToList();
                 brojKorisnika = dgvGlavni.RowCount;
                 dgvGlavni.Columns["upis"].Visible = false;
-                dgvGlavni.Columns["radi_u"].Visible = false;
                 dgvGlavni.Columns["obavijest"].Visible = false;
                 dgvGlavni.Columns["tip_korisnik"].Visible = false;
                 dgvGlavni.Columns["dnevnik"].Visible = false;
                 dgvGlavni.Columns["biljeska"].Visible = false;
                 dgvGlavni.Columns["aktivnost1"].Visible = false;
                 dgvGlavni.Columns["aktivnost"].Visible = false;
+                dgvGlavni.Columns["grupa"].Visible = false;
             }
             label4.Text = brojKorisnika.ToString();
         }

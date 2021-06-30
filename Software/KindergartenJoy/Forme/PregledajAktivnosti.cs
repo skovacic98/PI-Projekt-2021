@@ -27,7 +27,7 @@ namespace KindergartenJoy.Forme
         private void PregledajAktivnosti_Load(object sender, EventArgs e)
         {
             LoadajCijeliDGV();
-            if (korisnik.tip_korisnik_id != 2)
+            if (korisnik.tip_korisnik_id != 2 && korisnik.tip_korisnik_id != 8)
             {
                 btnDodajAktivnost.Enabled = false;
                 btnExport.Enabled = false;

@@ -58,8 +58,8 @@ namespace KindergartenJoy.Forme
 
             dgvDjeca.DataSource = djecaRoditelja;
             dgvDjeca.Columns["biljeska"].Visible = false;
-            dgvDjeca.Columns["se_nalazi"].Visible = false;
             dgvDjeca.Columns["upis"].Visible = false;
+            dgvDjeca.Columns["evidencija"].Visible = false;
         }
 
         private dijete DohvatiIzabranoDijete()

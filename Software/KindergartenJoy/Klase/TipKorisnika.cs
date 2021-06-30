@@ -8,5 +8,9 @@ namespace KindergartenJoy
 {
     public partial class  tip_korisnik
     {
+        public override string ToString()
+        {
+            return vrsta_korsnik;
+        }
     }
 }

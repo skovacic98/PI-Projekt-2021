@@ -94,11 +94,47 @@
     <Compile Include="evidencija.cs">
       <DependentUpon>VrticModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Forme\FormBiljeskaSpremljena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FormBiljeskaSpremljena.Designer.cs">
+      <DependentUpon>FormBiljeskaSpremljena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FormBiljeskePoslane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FormBiljeskePoslane.Designer.cs">
+      <DependentUpon>FormBiljeskePoslane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FormBilješke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FormBilješke.Designer.cs">
+      <DependentUpon>FormBilješke.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\FormAktivnostDodana.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forme\FormAktivnostDodana.Designer.cs">
       <DependentUpon>FormAktivnostDodana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FormDijeteEvidentirano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FormDijeteEvidentirano.Designer.cs">
+      <DependentUpon>FormDijeteEvidentirano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FormEvidencija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FormEvidencija.Designer.cs">
+      <DependentUpon>FormEvidencija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\FormEvidentiraj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FormEvidentiraj.Designer.cs">
+      <DependentUpon>FormEvidentiraj.cs</DependentUpon>
     </Compile>
     <Compile Include="Forme\FormGlavna.cs">
       <SubType>Form</SubType>
@@ -166,6 +202,12 @@
     <Compile Include="Forme\FormUpisObavljen.Designer.cs">
       <DependentUpon>FormUpisObavljen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\FormUpravljanjeUlogama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FormUpravljanjeUlogama.Designer.cs">
+      <DependentUpon>FormUpravljanjeUlogama.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\FormUrediProfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,12 +262,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Klase\TipKorisnika.cs" />
-    <Compile Include="radi_u.cs">
-      <DependentUpon>VrticModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="se_nalazi.cs">
-      <DependentUpon>VrticModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="tip_korisnik.cs">
       <DependentUpon>VrticModel.tt</DependentUpon>
     </Compile>
@@ -250,8 +286,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>VrticModel.edmx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forme\FormBiljeskaSpremljena.resx">
+      <DependentUpon>FormBiljeskaSpremljena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FormBiljeskePoslane.resx">
+      <DependentUpon>FormBiljeskePoslane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FormBilješke.resx">
+      <DependentUpon>FormBilješke.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\FormAktivnostDodana.resx">
       <DependentUpon>FormAktivnostDodana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FormDijeteEvidentirano.resx">
+      <DependentUpon>FormDijeteEvidentirano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FormEvidencija.resx">
+      <DependentUpon>FormEvidencija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FormEvidentiraj.resx">
+      <DependentUpon>FormEvidentiraj.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\FormGlavna.resx">
       <DependentUpon>FormGlavna.cs</DependentUpon>
@@ -288,6 +342,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\FormUpisObavljen.resx">
       <DependentUpon>FormUpisObavljen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FormUpravljanjeUlogama.resx">
+      <DependentUpon>FormUpravljanjeUlogama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\FormUrediProfil.resx">
       <DependentUpon>FormUrediProfil.cs</DependentUpon>

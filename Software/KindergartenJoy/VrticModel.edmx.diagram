@@ -13,8 +13,6 @@
         <EntityTypeShape EntityType="Model.grupa" Width="1.5" PointX="3" PointY="14.875" />
         <EntityTypeShape EntityType="Model.korisnik" Width="1.5" PointX="3" PointY="8.375" />
         <EntityTypeShape EntityType="Model.obavijest" Width="1.5" PointX="8.25" PointY="17.5" />
-        <EntityTypeShape EntityType="Model.radi_u" Width="1.5" PointX="5.25" PointY="9.875" />
-        <EntityTypeShape EntityType="Model.se_nalazi" Width="1.5" PointX="8.25" PointY="4.75" />
         <EntityTypeShape EntityType="Model.tip_korisnik" Width="1.5" PointX="0.75" PointY="9.75" />
         <EntityTypeShape EntityType="Model.tip_radnja" Width="1.5" PointX="6" PointY="4" />
         <EntityTypeShape EntityType="Model.upis" Width="1.5" PointX="0.5" PointY="6.5" />
@@ -22,18 +20,15 @@
         <AssociationConnector Association="Model.FK_korisnik_aktivnost" />
         <AssociationConnector Association="Model.FK_biljeska_dijete" />
         <AssociationConnector Association="Model.FK_biljeska_korisnik" />
-        <AssociationConnector Association="Model.FK_se_nalazi_dijete" />
         <AssociationConnector Association="Model.FK_upis_dijete" />
         <AssociationConnector Association="Model.FK_dnevnik_korisnik" />
         <AssociationConnector Association="Model.FK_dnevnik_tip_radnja" />
         <AssociationConnector Association="Model.FK_evidencija_grupa" />
-        <AssociationConnector Association="Model.FK_se_nalazi_evidencija" />
-        <AssociationConnector Association="Model.FK_radi_u_grupa" />
         <AssociationConnector Association="Model.FK_korisnik_tip_korisnik" />
         <AssociationConnector Association="Model.FK_obavijest_korisnik" />
-        <AssociationConnector Association="Model.FK_radi_u_korisnik" />
         <AssociationConnector Association="Model.FK_upis_korisnik" />
-        <AssociationConnector Association="Model.FK_se_nalazi_se_nalazi1" />
+        <AssociationConnector Association="Model.FK_evidencija_dijete" />
+        <AssociationConnector Association="Model.FK_korisnik_grupa" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -21,7 +21,6 @@ namespace KindergartenJoy
             this.biljeska = new HashSet<biljeska>();
             this.dnevnik = new HashSet<dnevnik>();
             this.obavijest = new HashSet<obavijest>();
-            this.radi_u = new HashSet<radi_u>();
             this.upis = new HashSet<upis>();
         }
     
@@ -37,6 +36,7 @@ namespace KindergartenJoy
         public string telefon { get; set; }
         public string status { get; set; }
         public string pretplata { get; set; }
+        public Nullable<int> grupa_id { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<aktivnost> aktivnost { get; set; }
@@ -49,8 +49,7 @@ namespace KindergartenJoy
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<obavijest> obavijest { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<radi_u> radi_u { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<upis> upis { get; set; }
+        public virtual grupa grupa { get; set; }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KindergartenJoy.Klase
+namespace KindergartenJoy
 {
     public partial class biljeska
     {
@@ -12,5 +12,14 @@ namespace KindergartenJoy.Klase
         public int DijeteId { get; set; }
         public string Sadržaj { get; set; }
         public DateTime Datum { get; set; }
+
+        internal static List<biljeska> DohvatiListuBilješki()
+        {
+            using (var context = new Entities())
+            {
+                List<biljeska> listaBilješki = context.biljeska.ToList();
+                return listaBilješki;
+            }
+        }
     }
 }

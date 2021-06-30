@@ -123,5 +123,10 @@ namespace KindergartenJoy.Forme
             FormWinService formWinService = new FormWinService();
             formWinService.ShowDialog();
         }
+
+        private void FormObavijesti_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

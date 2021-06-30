@@ -9,6 +9,7 @@ namespace KindergartenJoy
 {
     public partial class korisnik
     {
+
         internal static List<korisnik> DohvatiListuKorisnika()
         {
             using(var context = new Entities())
